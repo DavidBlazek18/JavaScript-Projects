@@ -1,0 +1,1 @@
+document.write("Lisa exclaimed, \"What\'ll we do?\"");
