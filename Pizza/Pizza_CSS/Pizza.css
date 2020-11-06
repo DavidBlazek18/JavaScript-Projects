@@ -1,0 +1,74 @@
+#menuBG	{
+width: 600px;
+height: 590px;
+margin: 20px auto;
+background-color: rgba(20, 20, 200, 0.3);
+}
+
+h1 {
+font-family: Impact, Charcoal, sans-serif;
+color: black;
+text-align: center;
+}
+
+h3 {
+font-family: "Arial Black", Gadget, sans-serif;
+color: black;
+}
+
+div {
+color: blue;
+}
+
+#frmMenu	{
+width: 630px;
+height: 200px;
+
+}
+
+#totalPrice	{
+width: 200px;
+height: 190px;
+margin: 0 auto;
+float: right;
+}
+
+.left	{
+width: 200px;
+height: 200px;
+float: left;
+padding-left: 30px
+}
+
+.center	{
+width: 200px;
+height: 200px;
+float: left;
+}
+
+.right	{
+width: 200px;
+height: 200px;
+float: right;
+}
+
+#showText	{
+width: 200px;
+height: 190px;
+margin: 0px auto;
+float: left;
+}
+
+#cart	{
+top: 0;
+margin:0px auto;
+width: 400px;
+height: 200px;
+}
+
+#btnOrder	{
+margin: 10px 0px 0px 250px;
+width: 100px;
+height: 40px;
+
+}
