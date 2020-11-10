@@ -40,8 +40,8 @@ function Handle_Operator(Next_Operator)	{
 	const { First_Operand, Display_Value, operator } = Calculator
 	//When an operator key is pressed we convert the first number
 	//displayed on the screen to a number and then store the result in
-	//Calculator.First_Operand if it doesn't already exist
-	const Value_Of_Input = parseFloat(Display_Value);
+	//Calculator.First_Operand if it doesn't alreasy exist
+	const Value_of_Input = parseFloat(Display_Value);
 	//checks if an operator already exists and if Wait_Second_Operand is true
 	//then update the operator and exits from the function
 	if (operator && Calculator.Wait_Second_Operator)	{
@@ -49,13 +49,13 @@ function Handle_Operator(Next_Operator)	{
 		return;
 	}
 	if (First_Operand == null)	{
-		Calculator.First_Operand = Value_Of_Input;
+		Calculator.First_Operand = Value_of_Input;
 	}	else if (operator)	{//checks if an operator already exists
 			const Value_Now = First_Operand || 0;
 			//if operator exists, property lookup is performed for the operator
 			//in the Perform_Calculation object and the function that matches the
 			//operator is executed
-			let result = Perform_Calculation[operator] (Value_Now, Value_Of_Input);
+			let result = Perform_Calculation[operator] (Value_Now, Value_of_Input);
 			//Here we add a fixed amount of numbers after the decimal
 			result = Number(result).toFixed(9)
 			//This will remove and trailing 0's
